@@ -3,3 +3,8 @@ out
 .vscode-test
 *.vsix
 .DS_Store
+
+# Test transcripts and temporary files
+transcript-*.txt
+*.log
+verify-*.sh

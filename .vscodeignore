@@ -6,3 +6,16 @@ tsconfig.json
 **/*.map
 **/*.ts
 node_modules
+
+# Test and temporary files
+transcript-*.txt
+*.vsix
+spec-vscode.md
+verify-*.sh
+*.log
+
+# Development files
+.DS_Store
+npm-debug.log*
+.eslintrc*
+.prettierrc*
