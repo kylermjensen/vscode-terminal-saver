@@ -5,19 +5,35 @@ All notable changes to the "Terminal Transcript Saver" extension will be documen
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2025-12-17
+
+### Added
+- File saving functionality with timestamped filenames
+- Configurable save location setting
+- Desktop fallback when no workspace is open
+- ANSI escape code stripping for clean output
+- Cross-platform clipboard reading (macOS, Windows, Linux)
+
+### Changed
+- Transcripts now save to files instead of clipboard-only
+- Improved error messaging
+- Better platform detection for clipboard operations
+
+### Features
+- **Keyboard Shortcut**: Cmd+Shift+S (Mac) or Ctrl+Shift+S (Windows/Linux) when terminal is focused
+- **File Output**: Saves to timestamped `.txt` files
+- **Configurable Location**: Custom save directory via settings
+- **Clean Output**: Automatically strips ANSI color codes and escape sequences
+- **Smart Fallback**: Saves to workspace root or Desktop if no workspace open
+- **Cross-platform Support**: Works on macOS, Linux (with xclip/xsel), and Windows
+
 ## [1.0.0] - 2025-12-17
 
 ### Added
 - Initial release of Terminal Transcript Saver extension
-- Save active terminal transcript to clipboard with Cmd+Shift+S (Mac)
-- Automatic command execution in terminal to capture full transcript
+- Save active terminal transcript with Cmd+Shift+S
 - Support for VS Code terminal integration
 - MIT License
 
-### Features
-- **Keyboard Shortcut**: Cmd+Shift+S when terminal is focused
-- **Clipboard Integration**: Transcript automatically copied to clipboard
-- **Terminal Command**: Uses `cat` to capture full terminal buffer content
-- **Cross-platform Support**: Works on macOS, Linux, and Windows
-
+[1.1.0]: https://github.com/kylermjensen/vscode-terminal-saver/releases/tag/v1.1.0
 [1.0.0]: https://github.com/kylermjensen/vscode-terminal-saver/releases/tag/v1.0.0

@@ -1,6 +1,6 @@
 # Terminal Transcript Saver
 
-Save terminal output to a file with `Cmd+Shift+S` (or `Ctrl+Shift+S` on Windows/Linux).
+Save terminal output to a file with `Cmd+Shift+S` on macOS (or `Ctrl+Shift+S` on Windows/Linux).
 
 VS Code terminals are ephemeral—close them and everything's gone. This extension saves clean, readable transcripts with one keypress.
 
@@ -120,10 +120,11 @@ code .
 ## Requirements
 
 - VS Code 1.80.0+
-- Open workspace folder
 - macOS: No additional requirements
 - Windows: No additional requirements
 - Linux: `xclip` or `xsel` installed
+
+**Note:** If no workspace is open, transcripts save to your Desktop by default.
 
 ## Config
 

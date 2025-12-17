@@ -19,3 +19,5 @@ verify-*.sh
 npm-debug.log*
 .eslintrc*
 .prettierrc*
+.github/**
+PUBLISHING.md

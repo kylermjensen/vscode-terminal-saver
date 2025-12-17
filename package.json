@@ -1,7 +1,7 @@
 {
   "name": "terminal-transcript-saver",
   "displayName": "Terminal Transcript Saver",
-  "description": "Save terminal transcripts with Cmd+S",
+  "description": "Save terminal transcripts with Cmd+Shift+S",
   "version": "1.1.0",
   "publisher": "KyleJensen",
   "author": "Kyle Jensen",
@@ -9,7 +9,7 @@
     "vscode": "^1.80.0"
   },
   "categories": [
-    "Other"
+    "Utilities"
   ],
   "keywords": [
     "terminal",
@@ -33,7 +33,6 @@
       {
         "command": "terminalTranscriptSaver.save",
         "key": "cmd+shift+s",
-        "mac": "cmd+shift+s",
         "when": "terminalFocus"
       }
     ],
@@ -64,5 +63,9 @@
     "type": "git",
     "url": "https://github.com/kylermjensen/vscode-terminal-saver"
   },
+  "bugs": {
+    "url": "https://github.com/kylermjensen/vscode-terminal-saver/issues"
+  },
+  "homepage": "https://github.com/kylermjensen/vscode-terminal-saver#readme",
   "license": "MIT"
 }
