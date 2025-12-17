@@ -24,8 +24,8 @@
     "keybindings": [
       {
         "command": "terminalTranscriptSaver.save",
-        "key": "cmd+s",
-        "mac": "cmd+s",
+        "key": "cmd+shift+s",
+        "mac": "cmd+shift+s",
         "when": "terminalFocus"
       }
     ]
@@ -36,9 +36,7 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile"
   },
-  "dependencies": {
-    "clipboardy": "^3.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@types/vscode": "^1.80.0",

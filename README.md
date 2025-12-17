@@ -55,6 +55,16 @@ The extension:
 - VS Code 1.80.0 or higher
 - A workspace folder must be open to save transcripts
 
+### Platform-specific Requirements
+
+**macOS:** No additional requirements (uses built-in `pbpaste`)
+
+**Windows:** No additional requirements (uses PowerShell `Get-Clipboard`)
+
+**Linux:** Requires one of the following clipboard utilities:
+- `xclip` (preferred): `sudo apt-get install xclip`
+- `xsel` (fallback): `sudo apt-get install xsel`
+
 ## Known Issues
 
 - Briefly selects all terminal content during save (visual flicker)
