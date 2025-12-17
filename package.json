@@ -2,7 +2,7 @@
   "name": "terminal-transcript-saver",
   "displayName": "Terminal Transcript Saver",
   "description": "Save terminal transcripts with Cmd+Shift+S",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "publisher": "KyleJensen",
   "author": "Kyle Jensen",
   "engines": {

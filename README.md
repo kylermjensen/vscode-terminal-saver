@@ -137,7 +137,7 @@ Set custom save location in VS Code settings:
 
 ## Source
 
-**[View on GitHub](https://github.com/kylermjensen/vscode-terminal-saver)** — Open source, fully auditable
+**[View on GitHub](https://github.com/kylermjensen/vscode-terminal-saver)**
 
 ## License
 

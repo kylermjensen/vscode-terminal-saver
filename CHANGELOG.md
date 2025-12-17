@@ -5,6 +5,19 @@ All notable changes to the "Terminal Transcript Saver" extension will be documen
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.1] - 2025-12-17
+
+### Fixed
+- Corrected package.json description (Cmd+S → Cmd+Shift+S)
+- Fixed README keybinding documentation
+- Removed misleading workspace requirement from README
+
+### Changed
+- Changed category from "Other" to "Utilities" for better discoverability
+- Added bugs and homepage URLs to package.json
+- Optimized package size (excluded development files)
+- Moved development scripts to .github/scripts/
+
 ## [1.1.0] - 2025-12-17
 
 ### Added
@@ -35,5 +48,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Support for VS Code terminal integration
 - MIT License
 
+[1.1.1]: https://github.com/kylermjensen/vscode-terminal-saver/releases/tag/v1.1.1
 [1.1.0]: https://github.com/kylermjensen/vscode-terminal-saver/releases/tag/v1.1.0
 [1.0.0]: https://github.com/kylermjensen/vscode-terminal-saver/releases/tag/v1.0.0
