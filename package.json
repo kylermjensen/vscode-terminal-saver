@@ -2,13 +2,21 @@
   "name": "terminal-transcript-saver",
   "displayName": "Terminal Transcript Saver",
   "description": "Save terminal transcripts with Cmd+S",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "publisher": "kylermjensen",
+  "author": "Kyle Jensen",
   "engines": {
     "vscode": "^1.80.0"
   },
   "categories": [
     "Other"
+  ],
+  "keywords": [
+    "terminal",
+    "transcript",
+    "clipboard",
+    "save",
+    "export"
   ],
   "activationEvents": [
     "onCommand:terminalTranscriptSaver.save"
