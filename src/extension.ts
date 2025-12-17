@@ -44,11 +44,13 @@ export function activate(context: vscode.ExtensionContext) {
             const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
             const filename = `transcript-${timestamp}.txt`;
 
-            // Step 6: Get save location (workspace folder or Desktop)
+            // Step 6: Get save location (custom, workspace, or Desktop)
+            const config = vscode.workspace.getConfiguration('terminalTranscriptSaver');
+            const customPath = config.get<string>('saveLocation');
+
             const workspaceFolder = vscode.workspace.workspaceFolders?.[0];
-            const saveDir = workspaceFolder
-                ? workspaceFolder.uri.fsPath
-                : path.join(process.env.HOME || '~', 'Desktop');
+            const saveDir = customPath ||
+                (workspaceFolder ? workspaceFolder.uri.fsPath : path.join(os.homedir(), 'Desktop'));
 
             const filePath = path.join(saveDir, filename);
 

@@ -3,7 +3,7 @@
   "displayName": "Terminal Transcript Saver",
   "description": "Save terminal transcripts with Cmd+S",
   "version": "1.0.0",
-  "publisher": "kylermjensen",
+  "publisher": "KyleJensen",
   "author": "Kyle Jensen",
   "engines": {
     "vscode": "^1.80.0"
@@ -36,7 +36,17 @@
         "mac": "cmd+shift+s",
         "when": "terminalFocus"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Terminal Transcript Saver",
+      "properties": {
+        "terminalTranscriptSaver.saveLocation": {
+          "type": "string",
+          "default": "",
+          "description": "Custom directory to save transcripts. Leave empty to use workspace root (or Desktop if no workspace open)."
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
