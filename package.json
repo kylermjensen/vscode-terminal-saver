@@ -36,6 +36,9 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile"
   },
+  "dependencies": {
+    "clipboardy": "^3.0.0"
+  },
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@types/vscode": "^1.80.0",

@@ -41,11 +41,14 @@ code --install-extension terminal-transcript-saver-0.1.0.vsix
 ## How It Works
 
 The extension:
-1. Listens to all terminal data writes and buffers the content
-2. When you press `Cmd+S` in a terminal, it captures the buffered content
-3. Strips ANSI escape codes (colors, formatting)
-4. Saves clean text to a timestamped file in your workspace root
-5. Shows a notification confirming the save
+1. When you press `Cmd+S` in a terminal, it executes VS Code's "Select All" command
+2. Copies the selection to clipboard using VS Code's "Copy Selection" command
+3. Reads the content from clipboard
+4. Strips ANSI escape codes (colors, formatting)
+5. Saves clean text to a timestamped file in your workspace root
+6. Clears the selection and shows a notification confirming the save
+
+**Technical approach:** Uses VS Code's built-in terminal commands + clipboard to work around API limitations (VS Code doesn't expose terminal buffer content directly to extensions).
 
 ## Requirements
 
@@ -54,8 +57,8 @@ The extension:
 
 ## Known Issues
 
-- Only captures content written after the extension activates
-- Terminal buffer is per-session (cleared when terminal closes)
+- Briefly selects all terminal content during save (visual flicker)
+- Overwrites clipboard temporarily (your previous clipboard content is lost)
 
 ## Development
 
@@ -76,11 +79,11 @@ Built with:
 
 ## Roadmap
 
-- [ ] Option to save full terminal history (not just buffered content)
+- [ ] Preserve clipboard content (restore after save)
 - [ ] Configurable save location
 - [ ] Custom filename templates
-- [ ] Auto-save on session end
-- [ ] Command palette command for manual save
+- [ ] Command palette command as alternative to hotkey
+- [ ] Option to append to existing file instead of creating new one
 
 ## Contributing
 
