@@ -1,13 +1,25 @@
 # Terminal Transcript Saver
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/kylermjensen/vscode-terminal-saver)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/KyleJensen.terminal-transcript-saver.svg)](https://marketplace.visualstudio.com/items?itemName=KyleJensen.terminal-transcript-saver)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/KyleJensen.terminal-transcript-saver.svg)](https://marketplace.visualstudio.com/items?itemName=KyleJensen.terminal-transcript-saver)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/KyleJensen.terminal-transcript-saver.svg)](https://marketplace.visualstudio.com/items?itemName=KyleJensen.terminal-transcript-saver)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
-[![Platform](https://img.shields.io/badge/platform-VS%20Code-007ACC.svg)](https://code.visualstudio.com/)
-[![VS Code Marketplace](https://img.shields.io/badge/VS%20Code-Marketplace-blue.svg?logo=visual-studio-code)](https://marketplace.visualstudio.com/)
 
-> A VS Code extension that saves terminal transcripts with a simple hotkey (`Cmd+Shift+S`).
+## The Problem
 
-Perfect for preserving CLI output, debugging sessions, build logs, or conversations with AI coding assistants like Claude Code.
+VS Code terminals dump everything when you close them. No built-in save.
+
+Copy-paste is tedious. Redirect hacks (`> log.txt`) don't work in integrated terminals.
+
+## The Solution
+
+`Cmd+Shift+S` → saves your terminal output to a file. No more copy-paste.
+
+Use it for:
+- AI coding sessions (Claude Code, Copilot)
+- Build failures and stack traces
+- Test output
+- Command history
 
 ![Demo](./demo.gif)
 *Press `Cmd+Shift+S` in any terminal to save a clean transcript*
@@ -23,12 +35,19 @@ Perfect for preserving CLI output, debugging sessions, build logs, or conversati
 
 ## Installation
 
-### From VS Code Marketplace (Coming Soon)
+### From VS Code Marketplace
 
 1. Open VS Code
 2. Press `Cmd+Shift+X` (Extensions view)
 3. Search for "Terminal Transcript Saver"
 4. Click Install
+
+Or install directly:
+```bash
+code --install-extension KyleJensen.terminal-transcript-saver
+```
+
+**Marketplace:** https://marketplace.visualstudio.com/items?itemName=KyleJensen.terminal-transcript-saver
 
 ### Development Installation
 
