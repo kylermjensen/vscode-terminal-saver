@@ -5,6 +5,8 @@
 [![Rating](https://img.shields.io/visual-studio-marketplace/r/KyleJensen.terminal-transcript-saver.svg)](https://marketplace.visualstudio.com/items?itemName=KyleJensen.terminal-transcript-saver)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
 
+**[View Source on GitHub](https://github.com/kylermjensen/vscode-terminal-saver)** — Open source, transparent, auditable code
+
 ## The Problem
 
 VS Code terminals dump everything when you close them. No built-in save.
